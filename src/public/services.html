@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Servicios de Desarrollo de Software | LoopDev - Soluciones Digitales</title>
+    <meta name="description" content="Servicios profesionales de desarrollo web, aplicaciones móviles, automatización y consultoría técnica. Planes desde $50 USD. Solicita tu cotización gratuita.">
+    <meta name="keywords" content="desarrollo de software, aplicaciones web, desarrollo móvil, automatización, SaaS, consultoría técnica, LoopDev, Colombia">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="LoopDev">
+    
+    <!-- Open Graph Meta Tags para redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Servicios de Desarrollo de Software | LoopDev">
+    <meta property="og:description" content="Soluciones digitales profesionales: desarrollo web, apps móviles, automatización y más. Planes desde $50 USD. ¡Solicita tu cotización gratuita!">
+    <meta property="og:image" content="https://loopdevco.github.io/LoopDev/src/assets/img/Logo.png">
+    <meta property="og:url" content="https://loopdevco.github.io/LoopDev/">
+    <meta property="og:site_name" content="LoopDev">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicios de Desarrollo de Software | LoopDev">
+    <meta name="twitter:description" content="Soluciones digitales profesionales: desarrollo web, apps móviles, automatización y más. Planes desde $50 USD.">
+    <meta name="twitter:image" content="https://loopdevco.github.io/LoopDev/src/assets/img/Logo.png">
+    <meta name="twitter:site" content="@LoopDevCo">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://loopdevco.github.io/LoopDev/">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LoopDev",
+        "url": "https://loopdevco.github.io/LoopDev/",
+        "logo": "https://loopdevco.github.io/LoopDev/src/assets/img/Logo.png",
+        "description": "Empresa de desarrollo de software especializada en soluciones digitales personalizadas",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CO",
+            "addressLocality": "Bogotá"
+        },
+        "sameAs": [
+            "https://www.instagram.com/loopdevco/",
+            "https://github.com/loopdevco"
+        ],
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Plan Starter",
+                "price": "50",
+                "priceCurrency": "USD"
+            },
+            {
+                "@type": "Offer", 
+                "name": "Plan Professional",
+                "price": "150",
+                "priceCurrency": "USD"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plan Enterprise",
+                "price": "250", 
+                "priceCurrency": "USD"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/icono.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/services.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="../assets/img/Logo.png" alt="LoopDev empresa de desarrollo web en Colombia" height="50px">
+            </div>
+            
+            <!-- Botón Hamburguesa -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/index.html#inicio">Inicio</a></li>
+                <li><a href="#inicio">Servicios</a></li>
+                <li><a href="/index.html#soluciones">Soluciones</a></li>
+                <li><a href="/index.html#nosotros">Nosotros</a></li>
+                <li><a href="/index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay para cerrar menú -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Servicios de Desarrollo de Software</h1>
+            <p class="hero-subtitle">Soluciones digitales diseñadas para impulsar tu negocio al siguiente nivel con tecnología de vanguardia</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="section">
+        <h2 class="section-title">Nuestro Portafolio de Servicios</h2>
+        <p class="section-subtitle">Ofrecemos un conjunto integral de servicios de desarrollo que se adaptan a las necesidades específicas de tu negocio</p>
+        
+        <div class="services-grid">
+            <article class="service-card">
+                <i class="fas fa-globe service-icon"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios web y plataformas modernas, responsivas y optimizadas para rendimiento y SEO. Desde landing pages hasta aplicaciones web complejas.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>Aplicaciones Móviles</h3>
+                <p>Apps nativas y multiplataforma diseñadas específicamente para tu negocio, desde prototipos hasta sistemas empresariales completos.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-cogs service-icon"></i>
+                <h3>Automatización e Integraciones</h3>
+                <p>Conectamos procesos y sistemas para reducir errores manuales, ahorrar tiempo y optimizar la eficiencia operativa de tu empresa.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-cloud service-icon"></i>
+                <h3>SaaS & Productos Digitales</h3>
+                <p>Construimos aplicaciones listas para escalar como software en la nube, con arquitectura robusta y escalable.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-brain service-icon"></i>
+                <h3>Consultoría Técnica</h3>
+                <p>Asesoría experta en arquitectura de software, buenas prácticas, optimización y modernización de proyectos existentes.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-database service-icon"></i>
+                <h3>Sistemas de Gestión</h3>
+                <p>ERP, CRM y sistemas administrativos personalizados para streamlizar los procesos internos de tu organización.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de Planes y Precios -->
+    <section class="pricing-section">
+        <div class="plans">
+            <h2 class="section-title">Planes para Todos los Presupuestos</h2>
+            <p class="section-subtitle">Selecciona el plan que mejor se adapte a tu proyecto y presupuesto</p>
+            
+            <div class="pricing-grid">
+                <!-- Plan Starter -->
+                <article class="pricing-card">
+                    <h3 class="plan-name">Starter</h3>
+                    <div class="plan-price">$50</div>
+                    <div class="plan-currency">USD / $200.000 COP</div>
+                    <p class="plan-description">Ideal para pequeños proyectos y startups que buscan comenzar su presencia digital</p>
+                    
+                    <ul class="plan-features">
+                        <li>Landing page o sitio web básico</li>
+                        <li>Hasta 5 páginas</li>
+                        <li>Diseño responsive</li>
+                        <li>Optimización SEO básica</li>
+                        <li>Formulario de contacto</li>
+                        <li>Soporte por email</li>
+                        <li>1 revisión incluida</li>
+                        <li>Entrega en 7-10 días</li>
+                    </ul>
+                    
+                    <a href="/index.html#contacto" class="plan-button">
+                        Comenzar Proyecto <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <!-- Plan Professional -->
+                <article class="pricing-card popular">
+                    <h3 class="plan-name">Professional</h3>
+                    <div class="plan-price">$150</div>
+                    <div class="plan-currency">USD / $600.000 COP</div>
+                    <p class="plan-description">Perfecto para empresas que necesitan funcionalidades avanzadas y mayor personalización</p>
+                    
+                    <ul class="plan-features">
+                        <li>Aplicación web completa</li>
+                        <li>Hasta 15 páginas/secciones</li>
+                        <li>Base de datos incluida</li>
+                        <li>Panel de administración</li>
+                        <li>Integración con APIs</li>
+                        <li>Soporte técnico prioritario</li>
+                        <li>3 revisiones incluidas</li>
+                        <li>Entrega en 15-20 días</li>
+                    </ul>
+                    
+                    <a href="/index.html#contacto" class="plan-button">
+                        Elegir Professional <i class="fas fa-rocket"></i>
+                    </a>
+                </article>
+
+                <!-- Plan Enterprise -->
+                <article class="pricing-card">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-price">$250</div>
+                    <div class="plan-currency">USD / $1.000.000 COP</div>
+                    <p class="plan-description">Solución completa para empresas que requieren sistemas robustos y escalables</p>
+                    
+                    <ul class="plan-features">
+                        <li>Sistema completo personalizado</li>
+                        <li>Aplicación móvil incluida</li>
+                        <li>Múltiples integraciones</li>
+                        <li>Arquitectura escalable</li>
+                        <li>Dashboard analíticas</li>
+                        <li>Soporte dedicado 24/7</li>
+                        <li>Revisiones ilimitadas</li>
+                        <li>Entrega en 25-30 días</li>
+                    </ul>
+                    
+                    <a href="/index.html#contacto" class="plan-button">
+                        Solicitar Enterprise <i class="fas fa-crown"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de trabajo -->
+    <section id="process" class="process-section">
+        <div class="process">
+            <h2 class="section-title">Nuestro Proceso de Trabajo</h2>
+            <p class="section-subtitle">Una metodología probada que garantiza resultados excepcionales</p>
+            
+            <div class="process-steps">
+                <article class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Análisis y Planeación</h3>
+                    <p class="step-description">Definimos tus necesidades, objetivos y la viabilidad técnica del proyecto mediante reuniones estratégicas.</p>
+                </article>
+
+                <article class="process-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Diseño y Prototipo</h3>
+                    <p class="step-description">Creamos wireframes, diseños UX/UI y prototipos interactivos para visualizar tu solución antes del desarrollo.</p>
+                </article>
+
+                <article class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Desarrollo Ágil</h3>
+                    <p class="step-description">Código limpio, entregas incrementales e iteraciones constantes usando metodologías ágiles para máxima eficiencia.</p>
+                </article>
+
+                <article class="process-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Testing y Optimización</h3>
+                    <p class="step-description">Pruebas exhaustivas, optimización de rendimiento y aseguramiento de calidad antes del lanzamiento.</p>
+                </article>
+
+                <article class="process-step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Entrega y Soporte</h3>
+                    <p class="step-description">Implementación final, capacitación del equipo y acompañamiento post-lanzamiento para garantizar el éxito.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de éxito -->
+    <section class="section">
+        <h2 class="section-title">Resultados que Nos Respaldan</h2>
+        <p class="section-subtitle">Casos reales de clientes que han transformado sus negocios con nuestras soluciones</p>
+        
+        <div class="services-grid">
+            <article class="service-card">
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3>Automatización Contable</h3>
+                <p>Un cliente redujo <strong>40% el tiempo</strong> invertido en procesos financieros mensuales, eliminando completamente el error humano en sus cálculos.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-users service-icon"></i>
+                <h3>Plataforma SaaS</h3>
+                <p>Una startup escaló de <strong>100 a 1,000 usuarios</strong> activos en menos de 3 meses gracias a nuestra arquitectura escalable y optimizada.</p>
+            </article>
+
+            <article class="service-card">
+                <i class="fas fa-mobile service-icon"></i>
+                <h3>App de Delivery</h3>
+                <p>Incrementamos las ventas en <strong>200%</strong> desarrollando una aplicación móvil que optimizó todo el proceso de pedidos y entregas.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="cta-content">
+            <h2 class="cta-title">¿Listo para Transformar tu Negocio?</h2>
+            <p class="cta-subtitle">Tu proyecto puede ser el próximo caso de éxito de LoopDev. Hablemos de cómo podemos llevar tu idea al siguiente nivel.</p>
+            
+            <div class="cta-buttons">
+                <a href="/index.html#contacto" class="btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Cotizar mi Proyecto
+                </a>
+                <a href="/index.html#contacto" class="btn-secondary">
+                    <i class="fas fa-calendar"></i>
+                    Agendar Reunión
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LoopDev</h4>
+                <p>Arquitectos de la eficiencia digital. Transformamos procesos complejos en soluciones fluidas y automatizadas.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Servicios</h4>
+                <p><a href="#servicios">Desarrollo de Páginas Web</a></p>
+                <p><a href="#servicios">Integración de APIs y Sistemas</a></p>
+                <p><a href="#servicios">Automatización de Procesos</a></p>
+                <p><a href="#servicios">Desarrollo de Bots Empresariales</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><a href="mailto:loopdev.co@gmail.com">loopdev.co@gmail.com</a></p>
+                <p><a href="https://wa.me/573016113155">+57 301 611 31 55</a></p>
+                <!-- <p><a href="#">LinkedIn</a></p>
+                <p><a href="#">GitHub</a></p> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 LoopDev. Innovación en cada ciclo.</p>
+        </div>
+    </footer>
+
+    <script>
+                // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+            }
+        });
+
+        // JavaScript para controlar el menú hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navOverlay = document.getElementById('navOverlay');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        // Toggle del menú
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            
+            // Prevenir scroll del body cuando el menú está abierto
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Cerrar menú
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Event listeners
+        hamburger.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', closeMenu);
+
+        // Cerrar menú al hacer click en un enlace
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Cerrar menú al redimensionar ventana (si se cambia a desktop)
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+
+        // Manejar tecla Escape para cerrar menú
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        // Crear las líneas de animación del hero
+        function createHeroAnimation() {
+            const heroSection = document.querySelector('.hero-section');
+            
+            // Crear contenedor de animación si no existe
+            if (!document.querySelector('.hero-bg-animation')) {
+                const animationContainer = document.createElement('div');
+                animationContainer.className = 'hero-bg-animation';
+                heroSection.appendChild(animationContainer);
+                
+                // Crear líneas de circuito
+                for (let i = 0; i < 8; i++) {
+                    const line = document.createElement('div');
+                    line.className = `circuit-line ${i % 2 === 0 ? 'horizontal' : 'vertical'}`;
+                    
+                    if (i % 2 === 0) {
+                        line.style.top = Math.random() * 100 + '%';
+                        line.style.left = '-200px';
+                        line.style.animationDelay = Math.random() * 4 + 's';
+                    } else {
+                        line.style.left = Math.random() * 100 + '%';
+                        line.style.top = '-200px';
+                        line.style.animationDelay = Math.random() * 4 + 's';
+                    }
+                    
+                    animationContainer.appendChild(line);
+                }
+            }
+        }
+
+        // Ejecutar cuando cargue la página
+        document.addEventListener('DOMContentLoaded', createHeroAnimation);
+
+    </script>
+
+    <!-- Schema Markup adicional para servicios -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Software Development",
+        "provider": {
+            "@type": "Organization",
+            "name": "LoopDev"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Desarrollo",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Plan Starter",
+                        "description": "Landing page o sitio web básico ideal para pequeños proyectos"
+                    },
+                    "price": "50.00",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Plan Professional",
+                        "description": "Aplicación web completa con funcionalidades avanzadas"
+                    },
+                    "price": "150.00",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Plan Enterprise",
+                        "description": "Sistema completo personalizado con aplicación móvil"
+                    },
+                    "price": "250.00",
+                    "priceCurrency": "USD"
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
