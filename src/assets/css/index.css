@@ -653,6 +653,10 @@ body {
     min-height: 120px;
 }
 
+.text-form {
+    text-align: justify;
+}
+
 .checkbox-group {
     flex-direction: row !important;
     align-items: center;
