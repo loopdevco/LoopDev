@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/assets/css/index.css">
+    <link rel="icon" href="src/assets/img/icono.png" type="image/x-icon">
 
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo"><img src="src/assets/img/Logo.png" alt="LoopDev" height="50px"></div>
-            <ul class="nav-menu">
+            <div class="logo">
+                <img src="src/assets/img/Logo.png" alt="LoopDev" height="50px">
+            </div>
+            
+            <!-- Botón Hamburguesa -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#soluciones">Soluciones</a></li>
@@ -23,6 +35,9 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Overlay para cerrar menú -->
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero-section">
@@ -312,6 +327,53 @@
                 navbar.style.background = 'rgba(10, 10, 10, 0.95)';
             } else {
                 navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+            }
+        });
+
+        // JavaScript para controlar el menú hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navOverlay = document.getElementById('navOverlay');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        // Toggle del menú
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            
+            // Prevenir scroll del body cuando el menú está abierto
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Cerrar menú
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Event listeners
+        hamburger.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', closeMenu);
+
+        // Cerrar menú al hacer click en un enlace
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Cerrar menú al redimensionar ventana (si se cambia a desktop)
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+
+        // Manejar tecla Escape para cerrar menú
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                closeMenu();
             }
         });
 
